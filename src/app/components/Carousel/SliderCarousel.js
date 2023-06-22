@@ -21,7 +21,7 @@ const SliderCarousel = ({ lng }) => {
 
         <div className='relative'>
 
-          <img src="assets/splash/splash_2.png" alt="splash2" />
+          <img src="assets/splash/splash_6.png" alt="splash2" />
           <p className='absolute lg:px-8 px-2 lg:py-2 py-1 lg:bottom-40 bottom-20 lg:left-20 left-10 bg-indigo-500 bg-opacity-100 rounded-xl lg:text-4xl text-lg text-white'>يخمن  مباراة</p>
 
           <Link href="/login">
@@ -35,6 +35,8 @@ const SliderCarousel = ({ lng }) => {
 
 
         </div>
+        
+        {/*
         <div className='relative'>
 
           <img src="assets/splash/splash_3.png" alt="ucl" />
@@ -83,6 +85,7 @@ const SliderCarousel = ({ lng }) => {
 
 
         </div>
+  */}
 
       </Carousel>
     </React.Fragment>

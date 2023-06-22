@@ -15,8 +15,9 @@ import Menu from './Menu';
 import { Trans } from 'react-i18next/TransWithoutContext';
 const Footer = ({ lng }) => {
     const { t } = useTranslation(lng, 'footer')
-    //console.log(t)
-    //console.log('hasil', t)
+   
+    //const email=`email`;
+
     return (
         <div className="w-full bg-gray-700">
             <div className="max-w-screen-xl mx-auto">
@@ -32,7 +33,7 @@ const Footer = ({ lng }) => {
                         website information about description
                             </Trans>
                         </p>
-                        <input type="text" placeholder="Email" className="py-2 p-2 sm:mt-1 mt-6 lg:w-40 w-40" />
+                        <input type="text" placeholder={t('email')} className="py-2 p-2 sm:mt-1 mt-6 lg:w-40 w-40" />
                         <div className="mt-4 sm:mt-2 mb-2">
                             <button className="border-2 border-yellow-600 text-wihite py-2 px-8">
                                 <Trans i18nKey="getintouch" t={t}>
