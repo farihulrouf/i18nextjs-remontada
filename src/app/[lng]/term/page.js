@@ -15,7 +15,6 @@ const Term = ({ params: { lng } }) => {
                     Term and condition
                 </Trans>
             </p>
-            <p className="text-sm py-6">Term condition text rule information  </p>
             <h3 className='text-2xl'>
                 <Trans i18nKey="scoopeservice" t={t}>
                     Scope Our Services
