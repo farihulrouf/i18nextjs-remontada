@@ -4,12 +4,14 @@ import { pagematch } from "./data";
 import { AiOutlineArrowRight }
     from 'react-icons/ai';
 import { BiFootball } from 'react-icons/bi'
+import { Trans } from 'react-i18next/TransWithoutContext';
 import { useRouter } from 'next/navigation';
+import { useTranslation } from '../i18n/client'
 //import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 
-const TabMatch = () => {
+const TabMatch = ({ lng }) => {
     const router = useRouter();
-
+    const { t } = useTranslation(lng, 'translation')
     const matchREdirect = () => {
         router.push('/login')
 
@@ -19,9 +21,19 @@ const TabMatch = () => {
             <div className="bg-yellow-500 p-2 mb-8 flex justify-between items-center">
                 <div className="flex items-center gap-2">
                     <BiFootball size={32} color="white" />
-                    <h2 className="lg:text-lg text-lg text-white">Footbal match</h2>
+                    <h2 className="lg:text-lg text-lg text-white">
+                        <Trans i18nKey="footbalmatch" t={t}>
+                             Football match
+                        </Trans>
+                    </h2>
                 </div>
-                <button className="bg-blue-900 text-white px-5 py-1 flex space-x-4 items-center rounded-lg text-lg lg:text-lg" onClick={matchREdirect}><span>Guess  now</span>  <AiOutlineArrowRight color="white" className="text-gray-400" /></button>
+                <button className="bg-blue-900 text-white px-5 py-1 flex space-x-4 items-center rounded-lg text-lg lg:text-lg" onClick={matchREdirect}>
+                    <span>
+                    <Trans i18nKey="guessnow" t={t}>
+                        Guess now
+                    </Trans>
+                    </span>  
+                    <AiOutlineArrowRight color="white" className="text-gray-400" /></button>
             </div>
   
             {pagematch.map((match, index) =>
