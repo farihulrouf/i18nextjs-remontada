@@ -21,13 +21,13 @@ const TabMatch = ({ lng }) => {
             <div className="bg-yellow-500 p-2 mb-8 flex justify-between items-center">
                 <div className="flex items-center gap-2">
                     <BiFootball size={32} color="white" />
-                    <h2 className="lg:text-lg text-lg text-white">
+                    <h2 className="lg:text-lg text-sm text-white">
                         <Trans i18nKey="footbalmatch" t={t}>
                              Football match
                         </Trans>
                     </h2>
                 </div>
-                <button className="bg-blue-900 text-white px-5 py-1 flex space-x-4 items-center rounded-lg text-lg lg:text-lg" onClick={matchREdirect}>
+                <button className="bg-blue-900 text-white px-5 py-1 flex space-x-4 items-center rounded-lg text-sm lg:text-lg" onClick={matchREdirect}>
                     <span>
                     <Trans i18nKey="guessnow" t={t}>
                         Guess now
