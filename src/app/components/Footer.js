@@ -32,7 +32,7 @@ const Footer = ({ lng }) => {
                         website information about description
                             </Trans>
                         </p>
-                        <input type="text" placeholder="Email" className="py-2 p-2 sm:mt-1 mt-4" />
+                        <input type="text" placeholder="Email" className="py-2 p-2 sm:mt-1 mt-6 lg:w-40 w-40" />
                         <div className="mt-4 sm:mt-2 mb-2">
                             <button className="border-2 border-yellow-600 text-wihite py-2 px-8">
                                 <Trans i18nKey="getintouch" t={t}>
