@@ -1,5 +1,5 @@
 import React from "react"
-import { pagematch } from "@/components/data";
+import { pagematch } from "@/app/components/data";
 import { AiOutlineArrowRight, AiOutlineClockCircle }
     from 'react-icons/ai';
 import { MdOutlineStadium } from 'react-icons/md'
