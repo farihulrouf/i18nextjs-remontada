@@ -52,7 +52,7 @@ const Footer = ({ lng }) => {
                         <ul className="list-none mt-6">
                             <a>
                                 <li className="mb-2 hover:text-yellow-500">
-                                    <Link href="/about">
+                                <Link href={`/${lng}/about`}>
                                         <Trans i18nKey="about" t={t}>
                                             About us
                                         </Trans>
@@ -61,7 +61,7 @@ const Footer = ({ lng }) => {
                             </a>
                             <a>
                                 <li className="mb-2 hover:text-yellow-500">
-                                    <Link href="/about">
+                                <Link href={`/${lng}/contact`}>
                                         <Trans i18nKey="contact" t={t}>
                                             Contact us
                                         </Trans>
@@ -71,7 +71,7 @@ const Footer = ({ lng }) => {
                             </a>
                             <a>
                                 <li className="mb-2 hover:text-yellow-500">
-                                    <Link href="/term">
+                                <Link href={`/${lng}/term`}>
                                         <Trans i18nKey="term" t={t}>
                                             Term & Condition
                                         </Trans>
