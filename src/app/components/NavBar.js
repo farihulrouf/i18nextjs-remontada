@@ -4,10 +4,12 @@ import Image from 'next/image'
 import React, { useState } from 'react';
 //import ReactFlagsSelect from "react-flags-select";
 import Link from 'next/link';
+import { useTranslation } from '../i18n/client'
 import Menu from './Menu';
-const NavBar = () => {
-
+const NavBar = ({ lng }) => {
+    const { t } = useTranslation(lng, 'navbar')
     const [showMobileMenu, setShowMobileMenu] = useState(false);
+   //console.log('hasil', t)
     return (
 
         <nav className="bg-black">
@@ -19,7 +21,7 @@ const NavBar = () => {
 
                 </div>
                 <div className="hidden md:block">
-                    <Menu />
+                    <Menu t={t} lng={lng} />
                 </div>
                 <button
                     type="button"

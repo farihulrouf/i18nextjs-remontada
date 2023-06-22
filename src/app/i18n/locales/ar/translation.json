@@ -7,5 +7,12 @@
   "blog": {
     "text": "Schau dir den entsprechenden <1>Blogeintrag</1> dieses Beispiels an.",
     "link": "https://locize.com/blog/next-13-app-dir-i18n/"
-  }
+  },
+  "guessnow": "خمن الآن",
+  "guessmatch": "يخمن مباراة",
+  "guestday": "مباريات يوم التخمين",
+  "winprizes": "اربح الكثير من الجوائز",
+  "partgame": "كن جزءا من اللعبة "
+
+
 }

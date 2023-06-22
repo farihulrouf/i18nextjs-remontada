@@ -1,5 +1,17 @@
 {
-  "description": "This is a non-page component that requires its own namespace",
-  "helpLocize": "With using <1>locize</1> you directly support the future of <3>i18next</3>.",
-  "languageSwitcher": "Switch from <1>{{lng}}</1> to: "
+  "about": "About",
+  "contact": "Contact Us",
+  "term": "Term and Condition",
+  "link": "link",
+  "getintouch": "Get in touch",
+  "email": "info@remontadaa.com",
+  "address": "lorempipsum",
+  "phone": "0937493898734",
+  "desc": "Consectetur adipisicing elit sedtado eiusmod dunt ut labore et dolore magna aliqua enim minim veniami quis nostrud.  ",
+  "design": "Designed",
+  "remontadaa": "remontadaa",
+  "years": "2023"
+
+  
+
 }
