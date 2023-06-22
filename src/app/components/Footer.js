@@ -18,7 +18,7 @@ const Footer = ({ lng }) => {
     //console.log(t)
     //console.log('hasil', t)
     return (
-        <div className="w-full">
+        <div className="w-full bg-gray-700">
             <div className="max-w-screen-xl mx-auto">
                 <div className="w-full flex flex-wrap p-4">
                     <div className="w-1/2 text-white sm:w-1/3">

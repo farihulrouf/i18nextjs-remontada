@@ -16,7 +16,7 @@ export default async function Page({ params: { lng } }) {
         <MatchHome lng={lng} />
         <Rules lng={lng} />
         <Categories />
-        <TabMatch />
+        <TabMatch lng={lng} />
       </div>
 
       {/*

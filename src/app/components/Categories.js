@@ -1,6 +1,11 @@
+"use client"
 import React from "react"
 import Image from "next/image"
-const Categories = () => {
+import { Trans } from 'react-i18next/TransWithoutContext';
+import { useTranslation } from '../i18n/client'
+const Categories = ({ lng }) => {
+    const { t } = useTranslation(lng, 'translation')
+
 
     return (
         <React.Fragment>
@@ -16,7 +21,11 @@ const Categories = () => {
                         alt="Picture of the author"
                     />
     */ }
-                <h2 className="text-4xl text-center">فئات</h2>
+                <h2 className="text-4xl text-center">
+                    <Trans i18nKey="categories" t={t}>
+                        Categories
+                    </Trans>
+                </h2>
                 <div className="flex flex-wrap justify-center lg:w-1/2 w-4/5 mx-auto gap-3 py-2">
                     <img src="/assets/icon/ucl.png" alt="ucl" className="w-[60px] h-[50px] lg:w-[121px] lg:h-[100px]"/>
                     <img src="/assets/icon/uefa.png" alt="uefa" className="w-[60px] h-[50px] lg:w-[121px] lg:h-[100px]"/>
