@@ -5,7 +5,7 @@ import { AiOutlineArrowRight }
     from 'react-icons/ai';
 import { BiFootball } from 'react-icons/bi'
 import { useRouter } from 'next/navigation';
-import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
+//import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 
 const TabMatch = () => {
     const router = useRouter();

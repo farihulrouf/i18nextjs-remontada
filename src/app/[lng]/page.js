@@ -5,6 +5,8 @@ import SliderCarousel from "../components/Carousel/SliderCarousel"
 import { Pangolin } from "next/font/google"
 import MatchHome from "../components/MatchHome"
 import Rules from "../components/Rules"
+import Categories from "../components/Categories"
+import TabMatch from "../components/TabMatch"
 export default async function Page({ params: { lng } }) {
   const { t } = await useTranslation(lng)
   return (
@@ -13,6 +15,8 @@ export default async function Page({ params: { lng } }) {
       <div className='max-w-screen-xl mx-auto'>
         <MatchHome lng={lng} />
         <Rules lng={lng} />
+        <Categories />
+        <TabMatch />
       </div>
 
       {/*
