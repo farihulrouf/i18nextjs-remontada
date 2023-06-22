@@ -1,5 +1,7 @@
 import { dir } from "i18next"
 import { languages } from "../i18n/settings"
+import NavBar from "../components/NavBar"
+
 export async function generateStaticParams() {
   return languages.map((lng) => ({ lng }))
 }
@@ -14,6 +16,7 @@ export default function RootLayout({
     <html lang={lng} dir={dir(lng)}>
       <head />
       <body>
+        <NavBar />
         {children}
       </body>
     </html>
