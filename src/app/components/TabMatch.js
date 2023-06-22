@@ -1,6 +1,7 @@
 "use client"
 import Image from "next/image"
 import { pagematch } from "./data";
+import Link from "next/link";
 import { AiOutlineArrowRight }
     from 'react-icons/ai';
 import { BiFootball } from 'react-icons/bi'
@@ -12,8 +13,10 @@ import { useTranslation } from '../i18n/client'
 const TabMatch = ({ lng }) => {
     const router = useRouter();
     const { t } = useTranslation(lng, 'translation')
+    //<Link href={`/${lng}/second-page`}>
+
     const matchREdirect = () => {
-        router.push('/login')
+        router.push(`/${lng}/login`)
 
     }
     return (
@@ -27,13 +30,12 @@ const TabMatch = ({ lng }) => {
                         </Trans>
                     </h2>
                 </div>
-                <button className="bg-blue-900 text-white px-5 py-1 flex space-x-4 items-center rounded-lg text-sm lg:text-lg" onClick={matchREdirect}>
-                    <span>
+                <button className="bg-blue-900 text-white px-5 py-1 flex space-x-4 items-center rounded-lg text-sm lg:text-lg" onClick={matchREdirect}> 
                     <Trans i18nKey="guessnow" t={t}>
-                        Guess now
+                            Guess now
                     </Trans>
-                    </span>  
-                    <AiOutlineArrowRight color="white" className="text-gray-400" /></button>
+                    <AiOutlineArrowRight color="white" className="text-gray-400" />
+                </button>
             </div>
   
             {pagematch.map((match, index) =>

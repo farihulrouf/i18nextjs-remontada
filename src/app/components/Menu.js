@@ -10,7 +10,7 @@ const Menu = ({ t, lng }) => {
 
             className="block md:inline-block px-3 py-2 rounded-md text-white bg-gray-900 focus:outline-none focus:text-white focus:bg-gray-700"
         >
-            <Link href="/">
+          <Link href={`/${lng}`}>
                 <Trans i18nKey="home" t={t}>
                     Home
                 </Trans>
@@ -20,9 +20,8 @@ const Menu = ({ t, lng }) => {
 
             className="block md:inline-block px-3 py-2 rounded-md hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700"
         >
-            <Link href="/about">
+          <Link href={`/${lng}/about`}>
                 <Trans i18nKey="about" t={t}>
-
                     About
                 </Trans>
             </Link>
@@ -31,7 +30,7 @@ const Menu = ({ t, lng }) => {
 
             className="block md:inline-block px-3 py-2 rounded-md hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700"
         >
-            <Link href="/contact">
+           <Link href={`/${lng}/contact`}>
                 <Trans i18nKey="contact" t={t}>
 
                     Contact Us
@@ -42,7 +41,7 @@ const Menu = ({ t, lng }) => {
 
             className="block md:inline-block px-3 py-2 rounded-md hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700"
         >
-            <Link href="/term">
+          <Link href={`/${lng}/term`}>
                 <Trans i18nKey="term" t={t}>
 
                     Termn and Condition
