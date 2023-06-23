@@ -44,10 +44,18 @@ const MatchHome = ({ lng }) => {
                 </p>
                 */}
                 <div className="bg-yellow-500 px-4 lg:w-20 w-10">
-                    <h1 className="lg:text-6xl text-xl text-center">1</h1>
+                    <h1 className="lg:text-6xl text-xl text-center">
+                         <Trans i18nKey="skor1" t={t}>
+                             1
+                         </Trans>
+                    </h1>
                 </div>
                 <div className="bg-gray-700 px-4 lg:w-20 w-10">
-                    <h1 className="lg:text-6xl text-xl text-white text-center">0</h1>
+                    <h1 className="lg:text-6xl text-xl text-white text-center">
+                         <Trans i18nKey="skor2" t={t}>
+                         0
+                         </Trans>
+                    </h1>
                 </div>
             </div>
             <div className="flex space-x-4 items-center">
