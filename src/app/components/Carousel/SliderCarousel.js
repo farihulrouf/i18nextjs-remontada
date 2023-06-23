@@ -24,7 +24,7 @@ const SliderCarousel = ({ lng }) => {
           <img src="assets/splash/splash_6.png" alt="splash2" />
           <p className='absolute lg:px-8 px-2 lg:py-2 py-1 lg:bottom-40 bottom-20 lg:left-20 left-10 bg-indigo-500 bg-opacity-100 rounded-xl lg:text-4xl text-lg text-white'>يخمن  مباراة</p>
 
-          <Link href="/login">
+          <Link href={`/${lng}/login`}>
             <p className='absolute lg:px-4 px-2 lg:py-2 py-1 lg:bottom-20 bottom-10 lg:left-20 left-10 bg-yellow-500 bg-opacity-100 rounded-xl lg:text-4xl text-lg text-white flex items-center'>
             <Trans i18nKey="guessnow" t={t}>
                 Guess Now
