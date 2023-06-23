@@ -49,7 +49,7 @@ const Login = ({ params: { lng } }) => {
                              <Trans i18nKey="startguess" t={t}>Start guessing the matches today</Trans>
                         </h3>
                         <div className="w-full bg-gray-200 flex flex-col p-24 mt-6 h-72 relative">
-                            <input type="password" className="p-2 px-4 border sm:w-full w-36 mb-2 rounded-xl" placeholder="Password" onChange={matchSoccer} />
+                            <input type="password" className="p-2 px-4 border sm:w-full w-36 mb-2 rounded-xl" placeholder={t('password')} onChange={matchSoccer} />
                             <button className="bg-yellow-400 px-2 w-36 py-2 mt-2 mb-2 rounded-xl flex justify-center items-center space-x-3" onClick={matchREdirect}>
                                 <label>
                                    <Trans i18nKey="guessnow" t={t}>
