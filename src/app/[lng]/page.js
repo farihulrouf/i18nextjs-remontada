@@ -7,10 +7,12 @@ import MatchHome from "../components/MatchHome"
 import Rules from "../components/Rules"
 import Categories from "../components/Categories"
 import TabMatch from "../components/TabMatch"
+import NavBar from "../components/NavBar"
 export default async function Page({ params: { lng } }) {
   const { t } = await useTranslation(lng)
   return (
     <React.Fragment>
+
       <SliderCarousel lng={lng}/>
       <div className='max-w-screen-xl mx-auto'>
         <MatchHome lng={lng} />
