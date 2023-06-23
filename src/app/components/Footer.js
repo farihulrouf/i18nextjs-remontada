@@ -107,7 +107,6 @@ const Footer = ({ lng }) => {
                             <div className="flex space-x-2 items-center py-2">
                                 <AiOutlineMail size={30} color="yellow" /> <p className="ml-2">
                                     <Trans i18nKey="email" t={t}>
-
                                         info@remontaa.com
                                     </Trans></p>
                             </div>

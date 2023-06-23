@@ -48,16 +48,14 @@ const Menu = ({ t, lng }) => {
                 </Trans>
             </Link>
         </a>
-        <div
-
-            className="block md:inline-block px-3 py-2 rounded-md hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700"
-        >
-            <div className='flex space-x-2'>
-            <Link href={`/en`}>
-                    En
+        <div className="block md:inline-block px-3 py-2 rounded-md">
+            <div className='flex space-x-2 items-center justify-center px-2 rounded-lg'>
+                <Link href={`/en`}>
+                     <img src="/assets/eng.png" className="w-8 h-auto px-1" alt="eng" />
                 </Link>
+                
                 <Link href={`/ar`}>
-                    Ar
+                     <img src="/assets/uea.png" className="w-8 h-auto px-1" alt="eng" />
                 </Link>
             </div>
 
