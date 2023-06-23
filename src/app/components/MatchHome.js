@@ -1,5 +1,10 @@
-import Image from "next/image";
+"use client"
+import { Trans } from 'react-i18next/TransWithoutContext';
+import { languages } from '../i18n/settings';
+import { useTranslation } from '../i18n/client'
 const MatchHome = ({ lng }) => {
+    const { t } = useTranslation(lng, 'translation')
+
     return (
         <div className="bg-gray-200 lg:px-24 px-4 flex justify-between p-2">
             <div className="flex space-x-4 items-center">
@@ -12,7 +17,11 @@ const MatchHome = ({ lng }) => {
                     alt="City"
                 />
     */}
-                <h2 className="lg:text-6xl text-lg">Man City</h2>
+                <h2 className="lg:text-6xl text-lg">
+                    <Trans i18nKey="mancity" t={t}>
+                        Man City
+                    </Trans>
+                </h2>
 
             </div>
             <div className="flex rounded-lg items-center relative  px-2">
@@ -42,7 +51,11 @@ const MatchHome = ({ lng }) => {
                 </div>
             </div>
             <div className="flex space-x-4 items-center">
-                <h2 className="lg:text-6xl text-lg">Inter</h2>
+                <h2 className="lg:text-6xl text-lg">
+                     <Trans i18nKey="inter" t={t}>
+                         Inter
+                    </Trans>
+                </h2>
                 <img src="/assets/club/inter.png" alt="ucl" className="w-[25px] h-[25px] lg:w-[100px] lg:h-[100px]"/>
 
                 {/*<Image
