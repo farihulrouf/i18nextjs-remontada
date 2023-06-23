@@ -14,8 +14,8 @@ import { useTranslation } from '../i18n/client'
 import Menu from './Menu';
 import { Trans } from 'react-i18next/TransWithoutContext';
 const Footer = ({ lng }) => {
-    const { t } = useTranslation(lng, 'footer')
-   
+    const { t } = useTranslation(lng, 'translation')
+   // console.log(t)
     //const email=`email`;
 
     return (

@@ -26,7 +26,21 @@
   "password": "password",
   "email": "email",
   "fullname": "full name",
-  "descontak": "Description"
+  "descontak": "Description",
+  "about": "About",
+  "contact": "Contact Us",
+  "term": "Term and Condition",
+  "link": "link",
+  "getintouch": "Get in touch",
+  "placaholderemail": "email",
+  "address": "lorempipsum",
+  "phone": "0937493898734",
+  "desc": "website information about description",
+  "desc1": "website information about description",
+  "design": "Designed",
+  "remontadaa": "remontadaa",
+  "years": "2023"
+
 
 
   
