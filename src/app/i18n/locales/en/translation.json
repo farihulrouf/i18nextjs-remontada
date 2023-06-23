@@ -23,7 +23,10 @@
   "skor1": "1",
   "skor2": "0",
   "nomatch": "There are no matches to predict now",
-  "password": "password"
+  "password": "password",
+  "email": "email",
+  "fullname": "full name",
+  "descontak": "Description"
 
 
   

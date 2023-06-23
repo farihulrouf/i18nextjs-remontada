@@ -24,7 +24,11 @@
   "skor1": "1",
   "skor2": "0",
   "nomatch": "Non ci sono partite da pronosticare ora",
-  "password": "parola d'ordine"
+  "password": "parola d'ordine",
+  "email": "E-mail",
+  "fullname": "Nome e cognome",
+  "descontak": "Descrizione"
+
 
 
 

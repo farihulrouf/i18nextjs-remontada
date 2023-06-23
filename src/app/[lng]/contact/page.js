@@ -37,9 +37,9 @@ const Contact = ({ params: { lng } }) => {
                             decryption information about the site   
                         </Trans>                    
                          </p>
-                        <input type="text" placeholder="Full Name" className="px-2 py-2 mb-6 border sm:w-2/3 w-full rounded-md" />
-                        <input type="text" placeholder="Email" className="px-2 py-2 mb-6 border sm:w-2/3 w-full rounded-md" />
-                        <textarea className="resize rounded-md border sm:w-2/3 w-full px-2 py-2 h-48 mb-2" placeholder="Description" />
+                        <input type="text" placeholder={t('fullname')} className="px-2 py-2 mb-6 border sm:w-2/3 w-full rounded-md" />
+                        <input type="text" placeholder={t('email')} className="px-2 py-2 mb-6 border sm:w-2/3 w-full rounded-md" />
+                        <textarea className="resize rounded-md border sm:w-2/3 w-full px-2 py-2 h-48 mb-2" placeholder={t('descontak')} />
                         <div className="mt-2 w-2/3 ">
                             <button className="bg-yellow-500 px-4 py-2 rounded-lg">
                             <Trans i18nKey="sendnow" t={t}>
