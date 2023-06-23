@@ -19,14 +19,15 @@ const Login = ({ params: { lng } }) => {
         setPassword(val.target.value);
         //console.log(password)
     }
+    
     const matchREdirect = () => {
         if(password === "12345") {
-            router.push('/match')
+            router.push(`/${lng}/match`)
 
             //console.log("redirect")
         }
         else {
-            router.push('/notmatch')
+            router.push(`/${lng}/notmatch`)
         }
     }
     return (
